@@ -1,0 +1,148 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.content-container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+    width: 30%;
+}
+
+header {
+    border-bottom: 2px solid #C6C6C6;
+    height: 120px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 30px 8px 0px 5px;
+
+    height: 100px;
+}
+
+.logo-img {
+    height: 120px;
+    width: 300px;
+
+    margin-bottom: 30px;
+}
+
+.pfp-container {
+    height: 90px;
+    width: 90px;
+
+    margin-bottom: 30px;
+}
+
+.pfp {
+    height: 100%;
+    width: 100%;
+
+    background: url("images/pfp.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px -30px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.subheader-container{
+    display: flex;
+    align-items: center;
+}
+
+.artist-pfp-container{
+    height: 90px;
+    width: 90px;
+
+    margin: 25px 20px;
+}
+
+.artist-pfp {
+    height: 100%;
+    width: 100%;
+
+    background: url("images/avatar-vangogh.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.artist-name{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 900;
+
+    margin: 0;
+}
+
+.post-location{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+
+    margin: 0;
+}
+
+h1{
+    font-size: 30px;
+}
+
+image {
+    width: 100%;
+}
+
+.post {
+    
+    background: url("images/post-vangogh.jpg");
+
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.icons-container {
+    display: flex;
+}
+
+.icons {
+    margin: 20px 10px 0px 20px;
+
+}
+
+.icon-img {
+    height: 50px ;
+    width: 50px;
+}
+
+.text-container {
+    margin: 5px 0px 0px 25px;
+    font-size: 30px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.likes p, .caption p {
+    margin: 0;
+}
+
+.likes {
+    font-weight: bold;
+    margin: 25px 10px;
+}
+
+.caption {
+    margin: 25px 10px;
+    display: inline;
+}
+
+.link-to-profile {
+    text-decoration: none;
+    color: black;
+
+    font-weight: bold;
+}
