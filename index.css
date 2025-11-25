@@ -1,18 +1,25 @@
 html, body {
     margin: 0;
     padding: 0;
+
+    background-color: whitesmoke;
 }
 
 .content-container {
     margin-left: auto;
     margin-right: auto;
-    height: 100vh;
-    width: 30%;
+    width: 30vw;
+
+    background-color: #FFFF;
 }
+
+/* HEADER SECTION */
 
 header {
     border-bottom: 2px solid #C6C6C6;
-    height: 120px;
+    height: 90px;
+
+    padding: 1px;
 }
 
 .header-container {
@@ -20,23 +27,23 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    margin: 30px 8px 0px 5px;
+    margin: 20px;
 
-    height: 100px;
+    height: 50px;
 }
 
 .logo-img {
-    height: 120px;
-    width: 300px;
+    height: 70px;
+    width: 195px;
 
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .pfp-container {
-    height: 90px;
-    width: 90px;
+    height: 48px;
+    width: 48px;
 
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .pfp {
@@ -45,21 +52,25 @@ header {
 
     background: url("images/pfp.jpg");
     background-repeat: no-repeat;
-    background-position: 0px -30px;
+    background-position: 0px -28px;
     background-size: cover;
     border-radius: 50%;
 }
 
+/* SUBHEADER SECTION */
+
 .subheader-container{
     display: flex;
     align-items: center;
+
+    padding: 2px;
+    
+    margin-left: 15px;
 }
 
 .artist-pfp-container{
-    height: 90px;
-    width: 90px;
-
-    margin: 25px 20px;
+    height: 48px;
+    width: 48px;
 }
 
 .artist-pfp {
@@ -68,42 +79,47 @@ header {
 
     background: url("images/avatar-vangogh.jpg");
     background-repeat: no-repeat;
-    background-position: 0px 0px;
     background-size: cover;
     border-radius: 50%;
 }
 
+.artist-info-container {
+    margin-left: 10px;
+}
+
 .artist-name{
     font-family: "Source Sans 3", sans-serif;
-    font-weight: 900;
+    font-weight: 800;
 
-    margin: 0;
+    margin-bottom: -2px;
 }
 
 .post-location{
     font-family: "Source Sans 3", sans-serif;
     font-weight: 400;
 
-    margin: 0;
+    margin-top: -2px;
 }
 
 h1{
-    font-size: 30px;
+    font-size: 18px;
 }
 
-image {
-    width: 100%;
-}
+/* POST SECTION */
 
 .post {
-    
     background: url("images/post-vangogh.jpg");
 
-    height: 100%;
-    width: 100%;
+    width: auto;
+    aspect-ratio: 1; 
     background-repeat: no-repeat;
     background-size: contain;
+}
 
+/* INTERACTIVITY SECTION */
+
+interactivity {
+    padding: 1px;
 }
 
 .icons-container {
@@ -111,32 +127,34 @@ image {
 }
 
 .icons {
-    margin: 20px 10px 0px 20px;
-
+    margin: 0;
 }
 
 .icon-img {
-    height: 50px ;
-    width: 50px;
+    height: 40px ;
+    width: 38px;
+
+    margin: 0px 10px;
 }
 
 .text-container {
-    margin: 5px 0px 0px 25px;
-    font-size: 30px;
+    font-size: 15px;
     font-family: "Source Sans 3", sans-serif;
+
+    margin-left: 20px;
 }
 
-.likes p, .caption p {
-    margin: 0;
+.likes p, .caption p, .link-to-profile{
+    font-size: 20px;
+
+    margin: 10px 0px;
 }
 
 .likes {
     font-weight: bold;
-    margin: 25px 10px;
 }
 
 .caption {
-    margin: 25px 10px;
     display: inline;
 }
 
@@ -145,4 +163,11 @@ image {
     color: black;
 
     font-weight: bold;
+}
+
+/* LOWER BORDER */
+
+.lower-border {
+    height: 50px;
+    background-color: #EDEDED;
 }
