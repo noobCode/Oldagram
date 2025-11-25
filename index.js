@@ -37,3 +37,5 @@ let post = getElementById("post").innerHTML
 let comment = getElementById("caption").innerHTML
 let likes = getElementById("likes").innerHTML
 
+// create infinite scroll loop, count from 0 - 2 then reset, on each count swap the page content. combine scroll animations and simple JS functions.
+

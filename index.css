@@ -1,6 +1,5 @@
 html, body {
     margin: 0;
-    padding: 0;
 
     background-color: whitesmoke;
 }
@@ -15,102 +14,44 @@ html, body {
 
 /* HEADER SECTION */
 
-header {
-    border-bottom: 2px solid #C6C6C6;
-    height: 90px;
-
-    padding: 1px;
-}
-
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    margin: 20px;
-
-    height: 50px;
+    height: 90px;
+    border-bottom: 2px solid #C6C6C6;
 }
 
 .logo-img {
     height: 70px;
     width: 195px;
-
-    margin-bottom: 10px;
 }
 
-.pfp-container {
-    height: 48px;
-    width: 48px;
+.my-pfp {
+    background: url("images/pfp.jpg");
+    background-position: 0px -28px;
+}
 
-    margin-bottom: 5px;
+/* SUBHEADER SECTION */
+.subheader-container {
+    height: 70px;
+}
+
+.artist-pfp {
+    background: url("images/avatar-vangogh.jpg");
 }
 
 .pfp {
     height: 100%;
     width: 100%;
-
-    background: url("images/pfp.jpg");
-    background-repeat: no-repeat;
-    background-position: 0px -28px;
-    background-size: cover;
     border-radius: 50%;
-}
-
-/* SUBHEADER SECTION */
-
-.subheader-container{
-    display: flex;
-    align-items: center;
-
-    padding: 2px;
-    
-    margin-left: 15px;
-}
-
-.artist-pfp-container{
-    height: 48px;
-    width: 48px;
-}
-
-.artist-pfp {
-    height: 100%;
-    width: 100%;
-
-    background: url("images/avatar-vangogh.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 50%;
-}
-
-.artist-info-container {
-    margin-left: 10px;
-}
-
-.artist-name{
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 800;
-
-    margin-bottom: -2px;
-}
-
-.post-location{
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 400;
-
-    margin-top: -2px;
-}
-
-h1{
-    font-size: 18px;
+    background-repeat: no-repeat;
 }
 
 /* POST SECTION */
 
 .post {
-    background: url("images/post-vangogh.jpg");
-
     width: auto;
+
+    background: url("images/post-vangogh.jpg");
     aspect-ratio: 1; 
     background-repeat: no-repeat;
     background-size: contain;
@@ -118,40 +59,8 @@ h1{
 
 /* INTERACTIVITY SECTION */
 
-interactivity {
-    padding: 1px;
-}
-
-.icons-container {
-    display: flex;
-}
-
 .icons {
-    margin: 0;
-}
-
-.icon-img {
-    height: 40px ;
-    width: 38px;
-
-    margin: 0px 10px;
-}
-
-.text-container {
-    font-size: 15px;
-    font-family: "Source Sans 3", sans-serif;
-
-    margin-left: 20px;
-}
-
-.likes p, .caption p, .link-to-profile{
-    font-size: 20px;
-
-    margin: 10px 0px;
-}
-
-.likes {
-    font-weight: bold;
+    padding-right: 15px;
 }
 
 .caption {
@@ -161,13 +70,61 @@ interactivity {
 .link-to-profile {
     text-decoration: none;
     color: black;
-
-    font-weight: bold;
 }
 
 /* LOWER BORDER */
 
 .lower-border {
-    height: 50px;
     background-color: #EDEDED;
 }
+
+/* TYPOGRAPHY */
+
+h1, .likes p, .caption p, .link-to-profile {
+    font-size: 18px;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.medium {
+    font-weight: 400;
+}
+
+/* MISC */
+
+.padding {
+    padding: 1px;
+}
+
+.icons-container, .subheader-container, .header-container{
+    display: flex;
+    align-items: center;
+}
+
+.standard-height {
+    height: 45px;
+}
+
+.standard-width {
+    width: 45px;
+}
+
+.right{
+    margin-left: 245px;
+}
+
+.standard-padding {
+    padding-left: 10px;
+}
+
+.standard-margin {
+    margin: 0px 15px;
+}
+
+.artist-info {
+    margin: 0;
+}
+
