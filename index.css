@@ -8,6 +8,8 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     width: 30vw;
+
+    background-color: #FFFF;
 }
 
 /* HEADER SECTION */
@@ -125,3 +127,4 @@ h1, .likes p, .caption p, .link-to-profile {
 .artist-info {
     margin: 0;
 }
+
