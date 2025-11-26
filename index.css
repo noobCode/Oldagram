@@ -49,12 +49,16 @@ html, body {
 /* POST SECTION */
 
 .post {
+
+
+
     width: auto;
 
     background: url("images/post-vangogh.jpg");
     aspect-ratio: 1; 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
 }
 
 /* INTERACTIVITY SECTION */
@@ -128,3 +132,13 @@ h1, .likes p, .caption p, .link-to-profile {
     margin: 0;
 }
 
+.post-container {
+    background-color: black;
+}
+
+/* fix this issue */
+
+.text-container {
+    margin-bottom: 10px;
+    background-color: aqua;
+}
