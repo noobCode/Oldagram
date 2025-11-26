@@ -29,13 +29,42 @@ const posts = [
 ]
 
 
-let name = getElementById("artist-name").innerHTML
-let username = getElementById("username").innerHTML
-let location = getElementById("post-location").innerHTML
-let avatar = getElementById("artist-pfp").innerHTML
-let post = getElementById("post").innerHTML
-let comment = getElementById("caption").innerHTML
-let likes = getElementById("likes").innerHTML
+let thisName = document.getElementById("artist-name")
+let thisUsername = document.getElementById("username")
+let thisLocation = document.getElementById("post-location")
+let thisAvatar = document.getElementById("artist-pfp")
+let thisPost = document.getElementById("post")
+let thisComment = document.getElementById("caption")
+let thisLikes = document.getElementById("likes")
 
 // create infinite scroll loop, count from 0 - 2 then reset, on each count swap the page content. combine scroll animations and simple JS functions.
 
+let count = 0
+
+function swap(posts, count) {
+
+    thisName.innerHTML = posts[count].name
+    thisUsername.innerHTML = posts[count].username + " "
+    thisLocation.innerHTML = posts[count].location
+    thisAvatar.style.backgroundImage = "url('" + posts[count].avatar + "')"
+    thisLocation.innerHTML = posts[count].location
+    thisPost.style.backgroundImage = "url('" + posts[count].post + "')"
+    thisComment.innerHTML = posts[count].comment
+    thisLikes.innerHTML = posts[count].likes + " likes"
+}
+
+document.addEventListener("click", function(){
+    if (count<posts.length - 1) {
+        count++
+    } else {
+        count = 0
+    }
+
+    swap(posts, count)
+
+    console.log("START")
+    console.log(thisName)
+    console.log(posts[count])
+    console.log(thisLikes)
+    console.log("END")
+})
