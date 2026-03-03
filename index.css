@@ -138,7 +138,10 @@ h1, .likes p, .caption p, .link-to-profile {
 
 /* fix this issue */
 
+.interactivity-container {
+    background-color: bisque;
+}
+
 .text-container {
-    margin-bottom: 10px;
     background-color: aqua;
 }
